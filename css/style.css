@@ -1,0 +1,267 @@
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.menu{
+    background-color: #2a3644;  
+    margin-bottom: 40px;  
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu_1>li,
+.menu_3>ul>li{
+    display: inline-block;
+    position: relative;
+}
+/* persha menushka pochatok*/
+.menu{
+    padding-left: 0;
+    text-align: justify;
+    font-size: 0;
+}
+.menu>li{
+    position: relative;
+    font-size: 16px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #fff;
+    list-style: none;
+}
+.menu>li:first-child{
+    border-left: none;
+}
+.menu>li:last-child{
+    border-right: none;
+}
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+.menu>li:hover{
+    background-color: #3f4852;
+}
+.menu a:hover{
+    color: #fd8612;
+}
+.after_menu::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.sub_menu{
+    padding-top: 5px;
+    top:  100%;
+}
+.sub_menu,
+.sub_menu_2,
+.sub_menu_3{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    width: 210px;
+    text-align: left;
+}
+.sub_menu ul{
+    padding: 0;
+}
+.sub_menu li{
+    background-color: #d2d4d5;
+    list-style: none;
+    text-align: left;
+}
+.sub_menu a{
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    display: block;
+}
+.sub_menu a:hover{
+    background-color: #2a3644; 
+}
+.menu li:hover .sub_menu{
+    display: block; 
+}
+/*persga menushka zakinchena*/ 
+/*menushka nomer 2*/
+.tablemenu{
+    border: none;
+    margin-bottom: 40px;
+}
+.row{
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+}
+.tablemenu .sub_menu li{
+    display: block;
+}
+.sub_menu li:hover .sub_menu_2{
+    display: block; 
+}
+.sub_menu_2 li:hover .sub_menu_3{
+    display: block; 
+}
+/*kinech menu nomer 2*/
+/*menushka  nomer 3*/
+.menu_3 ul{
+    font-size: 0;
+    padding: 0;
+}
+.menu_3 li{
+    list-style: none;
+    font-size: 14px;
+    display: block;
+}
+.social a{
+    position: absolute;
+}
+.fb{
+    width: 9px;
+    height: 16px;
+}
+.tw{
+    width: 16px;
+    height: 14px;
+}
+.inst{
+    width: 14px;
+    height: 14px;
+}
+/*menushca nomer */
+/*tablnchka nomer 1*/
+table{
+    width: 100%;
+    border-collapse: collapse;    
+}
+table tr:last-child td{
+    border-bottom: none;
+}
+table tr:last-child td{
+    border-right: none;
+}
+table td,
+table th{
+    border: 1px solid;
+    border-color: #c0c1c2;
+}
+thead{
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+}
+tbody{
+    color: #2a3644;
+}
+.resulys{
+    padding: 15px 0;
+}
+.years,
+.tcolumn_one,
+.tcolumn_two,
+.tcolumn_three{
+    width: 130px;
+    padding: 15px 0;
+}
+tbody tr:nth-child(n+1){
+    background-color: #f2f2f2;
+}
+tbody tr:nth-child(2n){
+    background-color: #e8e8e8;
+}
+tbody tr:hover{
+    background-color: #c0c1c2;
+}
+.numbers{
+    text-align: center;
+    width: 60px;
+}
+.names{
+    padding: 15px 25px;
+    width: 500px;
+}
+.tcolumn_one,
+.tcolumn_two,
+.tcolumn_three{
+    padding-right: 20px;
+    text-align: right;
+}
+/*kinec tablicu nomer 1*/
+/*tablichka nomer 2*/
+.table{
+    display: table;
+    width: 100%;
+}
+.table p:last-child i{
+    border-bottom: none;
+}
+.table p:last-child i{
+    border-right: none;
+}
+.years{
+    text-align: center;
+}
+.table b,
+.table i{
+    border: 1px solid;
+    border-color: #c0c1c2;
+}
+.table p{
+    display: table-row;
+}
+.table b{
+    display: table-cell;
+}
+.table i{
+    display: table-cell;
+    text-decoration: none;
+    font-style: normal;
+}
+table i,
+table b{
+    border: 1px solid;
+    border-color: #c0c1c2;
+}
+.table p:first-child{
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+}
+.table p:not(:first-child){
+    color: #2a3644;
+}
+.table p:not(:first-child):nth-child(n+1){
+    background-color: #f2f2f2;
+}
+.table p:not(:first-child):nth-child(2n){
+    background-color: #e8e8e8;
+}
+.table p:not(:first-child):hover{
+    background-color: #c0c1c2;
+}
+.table p:last-child{
+    margin-bottom: 95px;
+}                 
+/*kinec tablicu nomer 2*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clr::after{
+    content: "";
+    clear: both;
+    display: block;
+}
