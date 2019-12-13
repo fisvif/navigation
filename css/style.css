@@ -24,6 +24,13 @@ header a{
     display: inline-block;
     position: relative;
 }
+h1,
+h2{
+    font-size: 24px;
+    color: #bfbfbf;
+    font-family: "Arial";
+    font-weight: bold;
+}
 /* persha menushka pochatok*/
 .menu{
     padding-left: 0;
@@ -45,7 +52,8 @@ header a{
 }
 .menu a{
     display: block;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 16px;
 }
 .menu>li:hover{
     background-color: #3f4852;
@@ -62,6 +70,14 @@ header a{
     padding-top: 5px;
     top:  100%;
 }
+.sub_menu_2{
+    padding-left: 5px;
+    left:  100%
+}
+.sub_menu_3{
+    padding-right: 5px;
+    left:  100%
+}
 .sub_menu,
 .sub_menu_2,
 .sub_menu_3{
@@ -70,6 +86,7 @@ header a{
     position: absolute;
     width: 210px;
     text-align: left;
+    font-size: 15px;
 }
 .sub_menu ul{
     padding: 0;
@@ -101,8 +118,10 @@ header a{
 .row{
     display: table-row;
 }
+
 .cell{
     display: table-cell;
+    text-align: center;
 }
 .tablemenu .sub_menu li{
     display: block;
@@ -145,11 +164,23 @@ table{
     width: 100%;
     border-collapse: collapse;    
 }
-table tr:last-child td{
-    border-bottom: none;
-}
-table tr:last-child td{
+table tr th:last-child{
     border-right: none;
+}
+table tr td:last-child{
+    border-right: none;
+}
+table tr th:first-child{
+    border-left: none;
+}
+table tr td:first-child{
+    border-left: none;
+}
+table tr:first-child  th{
+    border-top: none;
+}
+table tr:last-child  td{
+    border-bottom: none;
 }
 table td,
 table th{
@@ -203,11 +234,21 @@ tbody tr:hover{
     display: table;
     width: 100%;
 }
-.table p:last-child i{
-    border-bottom: none;
+.table p b:first-child{
+    border-left: none;
+    border-top: none;
 }
-.table p:last-child i{
+.table p b:last-child{
     border-right: none;
+}
+.table p i:first-child{
+    border-left: none;
+}
+.table p i:last-child{
+    border-right: none;
+}
+.table p:last-child  i{
+    border-bottom: none;
 }
 .years{
     text-align: center;
@@ -250,8 +291,8 @@ table b{
 .table p:not(:first-child):hover{
     background-color: #c0c1c2;
 }
-.table p:last-child{
-    margin-bottom: 95px;
+.marbtm{
+    margin-bottom: 100px;
 }                 
 /*kinec tablicu nomer 2*/
 .left{
