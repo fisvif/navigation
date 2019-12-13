@@ -40,7 +40,7 @@ h2{
 .menu>li{
     position: relative;
     font-size: 16px;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     list-style: none;
 }
@@ -88,6 +88,16 @@ h2{
     text-align: left;
     font-size: 15px;
 }
+.sub_menu li,
+.sub_menu_2 li,
+.sub_menu_3 li{
+    border-bottom: 1px solid #b9bdc1;
+}
+.sub_menu li:last-child,
+.sub_menu_2 li:last-child,
+.sub_menu_3 li:last-child{
+    border-bottom: 0;
+}
 .sub_menu ul{
     padding: 0;
 }
@@ -118,10 +128,19 @@ h2{
 .row{
     display: table-row;
 }
-
 .cell{
     display: table-cell;
     text-align: center;
+}
+.sub_menu_2{
+    padding-left: 5px;
+    top: 51%;
+    left: 100%;
+}
+.sub_menu_3{
+    padding-right: 5px;
+    top: 100%;
+    right: 100%;
 }
 .tablemenu .sub_menu li{
     display: block;
