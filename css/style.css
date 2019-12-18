@@ -4,12 +4,15 @@ html{
 }
 body{
     margin: 0;
+    padding: 70px 0 100px;
 }
 .wrapper{
     margin: 0 auto;
     max-width: 960px;
 }
-.menu{
+.menu_1,
+.tablemenu,
+.menu_3{
     background-color: #2a3644;  
     margin-bottom: 40px;  
 }
@@ -30,6 +33,20 @@ h2{
     color: #bfbfbf;
     font-family: "Arial";
     font-weight: bold;
+    text-transform: uppercase;
+    padding: 48px 0 28px;
+    margin-top: 0;
+}
+
+.menu,
+.tablemenu{
+    border-radius: 3px;
+}
+.menu li:first-child:hover>a {
+    border-radius: 3px 3px 0 0;
+}
+.menu li:last-child:hover>a {
+    border-radius: 0  0 3px 3px;
 }
 /* persha menushka pochatok*/
 .menu{
@@ -70,14 +87,6 @@ h2{
     padding-top: 5px;
     top:  100%;
 }
-.sub_menu_2{
-    padding-left: 5px;
-    left:  100%
-}
-.sub_menu_3{
-    padding-right: 5px;
-    left:  100%
-}
 .sub_menu,
 .sub_menu_2,
 .sub_menu_3{
@@ -92,6 +101,7 @@ h2{
 .sub_menu_2 li,
 .sub_menu_3 li{
     border-bottom: 1px solid #b9bdc1;
+    position: relative;
 }
 .sub_menu li:last-child,
 .sub_menu_2 li:last-child,
@@ -100,9 +110,10 @@ h2{
 }
 .sub_menu ul{
     padding: 0;
+    border-radius: 3px;
+    background-color: #d2d4d5;
 }
 .sub_menu li{
-    background-color: #d2d4d5;
     list-style: none;
     text-align: left;
 }
@@ -122,7 +133,6 @@ h2{
 /*persga menushka zakinchena*/ 
 /*menushka nomer 2*/
 .tablemenu{
-    border: none;
     margin-bottom: 40px;
 }
 .row{
@@ -134,12 +144,12 @@ h2{
 }
 .sub_menu_2{
     padding-left: 5px;
-    top: 51%;
+    top: 0;
     left: 100%;
 }
 .sub_menu_3{
     padding-right: 5px;
-    top: 100%;
+    top: 0;
     right: 100%;
 }
 .tablemenu .sub_menu li{
@@ -161,9 +171,10 @@ h2{
     list-style: none;
     font-size: 14px;
     display: block;
+    border-right: 1px solid #fff;
 }
 .social a{
-    position: absolute;
+    position:  absolute;
 }
 .fb{
     width: 9px;
@@ -175,9 +186,36 @@ h2{
 }
 .inst{
     width: 14px;
-    height: 14px;
+    height: 16px;
 }
-/*menushca nomer */
+.sub_menu_double{
+    width: 420px;
+}
+.sub_menu_double ul{
+    width: 210px;
+}
+.sub_menu_double{
+    overflow: hidden;
+    border-radius: 3px;
+
+    padding-top: 5px;
+}
+.sub_menu_double ul:first-child li:first-child:hover a{
+    border-radius: 3px 0 0 0;
+}
+.sub_menu_double ul:last-child li:first-child:hover a{
+    border-radius: 0 3px 0 0;
+}
+.sub_menu_double ul:first-child li:last-child:hover a{
+    border-radius:0 0 0 3px;
+}
+.sub_menu_double ul:last-child li:last-child:hover a{
+    border-radius: 0 0 3px 0;
+}
+.sub_menu_double ul:first-child li{
+    border-right: 1px solid #b9bdc1;
+}
+/*kinec menushca nomer3*/
 /*tablnchka nomer 1*/
 table{
     width: 100%;
@@ -252,6 +290,7 @@ tbody tr:hover{
 .table{
     display: table;
     width: 100%;
+    border-collapse: collapse;
 }
 .table p b:first-child{
     border-left: none;
@@ -309,10 +348,7 @@ table b{
 }
 .table p:not(:first-child):hover{
     background-color: #c0c1c2;
-}
-.marbtm{
-    margin-bottom: 100px;
-}                 
+}              
 /*kinec tablicu nomer 2*/
 .left{
     float: left;
