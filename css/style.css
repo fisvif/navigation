@@ -320,6 +320,7 @@ tbody tr:hover{
 .names{
     padding: 15px 25px;
     width: 500px;
+    text-align: left;
 }
 .tcolumn_one,
 .tcolumn_two,
@@ -374,8 +375,8 @@ tbody tr:hover{
     text-decoration: none;
     font-style: normal;
 }
-table i,
-table b{
+.table i,
+.table b{
     border: 1px solid;
     border-color: #c0c1c2;
 }
