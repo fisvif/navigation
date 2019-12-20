@@ -165,7 +165,6 @@ h2{
 /*menushka  nomer 3*/
 .menu_3 ul{
     font-size: 0;
-    padding: 0;
 }
 .menu_3 li{
     list-style: none;
@@ -173,23 +172,65 @@ h2{
     display: block;
     border-right: 1px solid #fff;
 }
+.menu_3:first-child ul:last-child li{
+    border-right: none;
+}
+.home{
+    position: relative;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -1px/*-20px кольорва хата*/ -2px;
+    top: 15px;
+} 
+.social{
+    padding: 15px 30px;
+}
+.social li{
+    border: none;
+    padding-right: 25px;
+}
 .social a{
-    position:  absolute;
+    display: block;
+    padding: 0;
 }
 .fb{
-    width: 9px;
-    height: 16px;
+    width: 10px;
+    height: 18px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -13px -50px;
+    transition: all 0.5s ease;
 }
 .tw{
     width: 16px;
-    height: 14px;
+    height: 16px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -20px -32px;
+    transition: all 0.5s ease;
 }
 .inst{
     width: 14px;
     height: 16px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -18px -15px;
+    transition: all 0.5s ease;
+}
+.fb:hover{
+    background-position: -2px -50px;
+}
+.tw:hover{
+    background-position: -3px -32px;
+}
+.inst:hover{
+    background-position: -1.5px -15px;
 }
 .sub_menu_double{
     width: 420px;
+    background-color: #d2d4d5;  
 }
 .sub_menu_double ul{
     width: 210px;
@@ -197,8 +238,6 @@ h2{
 .sub_menu_double{
     overflow: hidden;
     border-radius: 3px;
-
-    padding-top: 5px;
 }
 .sub_menu_double ul:first-child li:first-child:hover a{
     border-radius: 3px 0 0 0;
