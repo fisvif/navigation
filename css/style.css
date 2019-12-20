@@ -278,8 +278,11 @@ table tr:first-child  th{
 table tr:last-child  td{
     border-bottom: none;
 }
-table td,
-table th{
+thead th{
+    border: 1px solid;
+    border-color: #3f4852;
+}
+tbody td{
     border: 1px solid;
     border-color: #c0c1c2;
 }
@@ -331,9 +334,11 @@ tbody tr:hover{
     width: 100%;
     border-collapse: collapse;
 }
+.table p:first-child  i{
+    border-top: none;
+}
 .table p b:first-child{
     border-left: none;
-    border-top: none;
 }
 .table p b:last-child{
     border-right: none;
@@ -350,7 +355,10 @@ tbody tr:hover{
 .years{
     text-align: center;
 }
-.table b,
+.table b{
+    border: 1px solid;
+    border-color: #3f4852;
+}
 .table i{
     border: 1px solid;
     border-color: #c0c1c2;
