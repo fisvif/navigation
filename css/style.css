@@ -178,7 +178,7 @@ h2{
 .menu_3>ul>li{
     border-right: 1px solid #3f4751;
 }
-.menu_3:first-child ul:last-child li{
+.menu_3 ul:last-child li{
     border-right: none;
 }
 .home{
