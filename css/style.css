@@ -127,6 +127,7 @@ h2{
 .sub_menu a:hover{
     background-color: #2a3644; 
 }
+
 .menu li:hover .sub_menu{
     display: block; 
 }
@@ -169,10 +170,12 @@ h2{
 .menu_3 ul{
     font-size: 0;
 }
-.menu_3>li{
+.menu_3 li{
     list-style: none;
     font-size: 14px;
     display: block;
+}
+.menu_3>ul>li{
     border-right: 1px solid #3f4751;
 }
 .menu_3:first-child ul:last-child li{
@@ -195,7 +198,7 @@ h2{
 }
 .social li{
     border: none;
-    padding-right: 25px;
+    padding-left: 25px;
 }
 .social a{
     display: block;
@@ -209,27 +212,27 @@ h2{
     transition: all 0.5s ease;
 }
 .tw{
-    width: 16px;
+    width: 18px;
     height: 16px;
     background: url(../images/sprait.png) no-repeat;
-    background-position: -20px -32px;
+    background-position: -20px -33px;
     transition: all 0.5s ease;
 }
 .inst{
     width: 14px;
     height: 16px;
     background: url(../images/sprait.png) no-repeat;
-    background-position: -18px -15px;
+    background-position: -18px -16px;
     transition: all 0.5s ease;
 }
 .fb:hover{
     background-position: -2px -50px;
 }
 .tw:hover{
-    background-position: -3px -32px;
+    background-position: -2px -33px;
 }
 .inst:hover{
-    background-position: -1.5px -15px;
+    background-position: -1.5px -16px;
 }
 .sub_menu_double{
     width: 420px;
