@@ -169,7 +169,7 @@ h2{
 .menu_3 ul{
     font-size: 0;
 }
-.menu_3 li{
+.menu_3>li{
     list-style: none;
     font-size: 14px;
     display: block;
