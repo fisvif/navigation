@@ -57,8 +57,8 @@ h2{
 .menu>li{
     position: relative;
     font-size: 16px;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-right: 1px solid #3f4751;
+    border-left: 1px solid #3f4751;
     list-style: none;
 }
 .menu>li:first-child{
@@ -130,6 +130,9 @@ h2{
 .menu li:hover .sub_menu{
     display: block; 
 }
+.menu_1 li:last-child .sub_menu{
+    right: 0;
+}
 /*persga menushka zakinchena*/ 
 /*menushka nomer 2*/
 .tablemenu{
@@ -170,7 +173,7 @@ h2{
     list-style: none;
     font-size: 14px;
     display: block;
-    border-right: 1px solid #fff;
+    border-right: 1px solid #3f4751;
 }
 .menu_3:first-child ul:last-child li{
     border-right: none;
@@ -304,10 +307,10 @@ tbody{
     width: 130px;
     padding: 15px 0;
 }
-tbody tr:nth-child(n+1){
+tbody tr:nth-child(n+1) td{
     background-color: #f2f2f2;
 }
-tbody tr:nth-child(2n){
+tbody tr:nth-child(2n) td{
     background-color: #e8e8e8;
 }
 tbody tr:hover{
@@ -335,7 +338,7 @@ tbody tr:hover{
     width: 100%;
     border-collapse: collapse;
 }
-.table p:first-child  i{
+.table p b{
     border-top: none;
 }
 .table p b:first-child{
@@ -380,7 +383,7 @@ tbody tr:hover{
     border: 1px solid;
     border-color: #c0c1c2;
 }
-.table p:first-child{
+.table p:first-child b{
     background-color: #2a3644;
     font-size: 16px;
     color: #ffffff;
@@ -388,14 +391,30 @@ tbody tr:hover{
 .table p:not(:first-child){
     color: #2a3644;
 }
-.table p:not(:first-child):nth-child(n+1){
+.table p:not(:first-child):nth-child(n+1) i{
     background-color: #f2f2f2;
 }
-.table p:not(:first-child):nth-child(2n){
+.table p:not(:first-child):nth-child(2n) i{
     background-color: #e8e8e8;
 }
-.table p:not(:first-child):hover{
+.table p:not(:first-child):hover i{
     background-color: #c0c1c2;
+}
+.table p:first-child b:first-child,
+table tr:first-child th:first-child{
+    border-radius: 3px 0 0 0;
+} 
+.table p:first-child b:last-child,
+table tr:first-child th:last-child{
+    border-radius: 0 3px 0 0;
+} 
+.table p:last-child i:first-child,
+table tr:last-child td:first-child{
+    border-radius: 0 0 0 3px;
+} 
+.table p:last-child i:last-child,
+table tr:last-child td:last-child{
+    border-radius: 0 0 3px 0;
 }              
 /*kinec tablicu nomer 2*/
 .left{
