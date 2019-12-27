@@ -236,14 +236,15 @@ h2{
 }
 .sub_menu_double{
     width: 420px;
-    background-color: #d2d4d5;  
+    background-color: #d2d4d5;
+    overflow: hidden;
+    border-radius: 3px;  
 }
 .sub_menu_double ul{
     width: 210px;
 }
-.sub_menu_double{
-    overflow: hidden;
-    border-radius: 3px;
+.sub_menu_double:last-child li{
+    border-bottom: 1px solid #b9bdc1;
 }
 .sub_menu_double ul:first-child li:first-child:hover a{
     border-radius: 3px 0 0 0;
