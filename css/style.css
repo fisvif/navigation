@@ -43,11 +43,11 @@ h2{
 .tablemenu{
     border-radius: 3px;
 }
-.menu li:first-child:hover>a {
-    border-radius: 3px 3px 0 0;
+.menu>li:first-child:hover{
+    border-radius: 3px 0 0 3px;
 }
-.menu li:last-child:hover>a {
-    border-radius: 0  0 3px 3px;
+.menu>li:last-child:hover{
+    border-radius: 0  3px 3px 0;
 }
 /* persha menushka pochatok*/
 .menu{
