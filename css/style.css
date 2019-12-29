@@ -103,10 +103,11 @@ h2{
     border-bottom: 1px solid #b9bdc1;
     position: relative;
 }
-.sub_menu li:last-child,
+.menu_1 .sub_menu li:last-child,
+.menu_2 .sub_menu li:last-child,
 .sub_menu_2 li:last-child,
 .sub_menu_3 li:last-child{
-    border-bottom: 0;
+    border-bottom: none;
 }
 .sub_menu ul{
     padding: 0;
@@ -181,8 +182,9 @@ h2{
 .menu_3 ul:last-child li{
     border-right: none;
 }
-.home{
+a.home{
     position: relative;
+    padding-left: 55px;
 }
 .home::before{
     content: "";
@@ -190,8 +192,8 @@ h2{
     width: 16px;
     height: 13px;
     background: url(../images/sprait.png) no-repeat;
-    background-position: -1px/*-20px кольорва хата*/ -2px;
-    top: 15px;
+    background-position: -1px -2px;
+    left: 28px;
 } 
 .social{
     padding: 15px 30px;
@@ -243,8 +245,8 @@ h2{
 .sub_menu_double ul{
     width: 210px;
 }
-.sub_menu_double:last-child li{
-    border-bottom: 1px solid #b9bdc1;
+.sub_menu_double ul:first-child li{
+    border-right: 1px solid #b9bdc1;
 }
 .sub_menu_double ul:first-child li:first-child:hover a{
     border-radius: 3px 0 0 0;
@@ -258,8 +260,8 @@ h2{
 .sub_menu_double ul:last-child li:last-child:hover a{
     border-radius: 0 0 3px 0;
 }
-.sub_menu_double ul:first-child li{
-    border-right: 1px solid #b9bdc1;
+li.bdb-none{
+    border-bottom: none;
 }
 /*kinec menushca nomer3*/
 /*tablnchka nomer 1*/
