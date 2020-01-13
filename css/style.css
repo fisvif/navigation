@@ -13,8 +13,8 @@ body{
 .menu_1,
 .tablemenu,
 .menu_3{
-    background-color: #2a3644;  
-    margin-bottom: 40px;  
+    margin-bottom: 40px; 
+    background-color: #2a3644;   
 }
 
 header a{
@@ -34,10 +34,11 @@ h2{
     font-family: "Arial";
     font-weight: bold;
     text-transform: uppercase;
-    padding: 48px 0 28px;
     margin-top: 0;
 }
-
+h2{
+    padding: 48px 0 28px;
+}
 .menu,
 .menu_3,
 .tablemenu{
@@ -48,6 +49,12 @@ h2{
 }
 .menu>li:last-child:hover{
     border-radius: 0  3px 3px 0;
+}
+.sub_menu ul>li:first-child:hover>a{
+    border-radius: 6px 0 0 6px;
+}
+.sub_menu ul>li:last-child:hover>a{
+    border-radius: 0 6px 6px 0;
 }
 /* persha menushka pochatok*/
 .menu{
@@ -60,7 +67,6 @@ h2{
     font-size: 16px;
     border-right: 1px solid #3f4751;
     border-left: 1px solid #3f4751;
-    list-style: none;
 }
 .menu>li:first-child{
     border-left: none;
@@ -73,10 +79,12 @@ h2{
     padding: 15px 30px;
     font-size: 16px;
 }
-.menu>li:hover{
+.menu>li:hover,
+.sub_menu li:hover{
     background-color: #3f4852;
 }
-.menu a:hover{
+.menu>li:hover>a,
+.sub_menu li:hover>a{
     color: #fd8612;
 }
 .after_menu::after{
@@ -117,7 +125,6 @@ h2{
 }
 .sub_menu li{
     list-style: none;
-    text-align: left;
 }
 .sub_menu a{
     padding: 15px 20px;
@@ -126,21 +133,14 @@ h2{
     font-weight: bold;
     display: block;
 }
-.sub_menu a:hover{
-    background-color: #2a3644; 
-}
-
 .menu li:hover .sub_menu{
-    display: block; 
+    display: block;
 }
 .menu_1 li:last-child .sub_menu{
     right: 0;
 }
 /*persga menushka zakinchena*/ 
 /*menushka nomer 2*/
-.tablemenu{
-    margin-bottom: 40px;
-}
 .row{
     display: table-row;
 }
@@ -195,6 +195,7 @@ a.home{
     background: url(../images/sprait.png) no-repeat;
     background-position: -1px -2px;
     left: 28px;
+    bottom: 19px;
 } 
 .social{
     padding: 15px 30px;
