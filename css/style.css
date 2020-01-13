@@ -50,11 +50,17 @@ h2{
 .menu>li:last-child:hover{
     border-radius: 0  3px 3px 0;
 }
-.sub_menu ul>li:first-child:hover>a{
-    border-radius: 6px 0 0 6px;
+.sub_menu li:first-child:hover a{
+    border-radius: 3px 3px 0 0;
 }
-.sub_menu ul>li:last-child:hover>a{
-    border-radius: 0 6px 6px 0;
+.sub_menu li:last-child:hover a{
+    border-radius: 0 0 3px 3px;
+}
+.sub_menu_3 li:first-child:hover a{
+    border-radius: 3px 3px 0 0;
+}
+.sub_menu_3 li:last-child:hover a{
+    border-radius: 0 0 3px 3px;
 }
 /* persha menushka pochatok*/
 .menu{
@@ -79,9 +85,11 @@ h2{
     padding: 15px 30px;
     font-size: 16px;
 }
-.menu>li:hover,
-.sub_menu li:hover{
+.menu>li:hover{
     background-color: #3f4852;
+}
+.sub_menu li:hover>a{
+    background-color: #2a3644;
 }
 .menu>li:hover>a,
 .sub_menu li:hover>a{
